@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ваше ім'я">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лист</title>
+    <link rel="stylesheet" href="lab3-style.css">
+</head>
+<body>
+    <header>
+        <address class="sender-column">
+            Ім'я Відправника<br>
+            Університет ім. І.І. <br>
+            Вулиця Прикладна, 25<br>
+            Місто, Країна<br>
+            <strong>Tel</strong>: +380-12-345-6789<br>
+            <strong>Email</strong>: example@example.com
+        </address>
+        <time datetime="2024-09-25" class="sender-column">25 вересня 2024 року</time>
+    </header>
+
+    <h1>Re: Початок нового навчального семестру</h1>
+    
+    <address>
+        Одержувач<br>
+        Пр. Григорія <br>
+        Вулиця Прикладна, 58<br>
+        Місто, Країна<br>
+        <strong>Tel</strong>: +380-98-765-4321<br>
+        <strong>Email</strong>: odreceive@example.com
+    </address>
+
+    <p>Шановний <strong>Ім'я Одержувача</strong>,</p>
+
+    <h2>Дати початку семестру</h2>
+    <p>Цього року новий семестр розпочнеться <time datetime="2024-10-01">1 жовтня 2024 року</time>. Запис на курси триватиме до <time datetime="2024-10-15">15 жовтня 2024 року</time>.</p>
+
+    <h2>Вивчення предметів</h2>
+    <ul>
+        <li>Фізика: Четвер 9:00 – 11:00</li>
+        <li>Математика: Понеділок 13:00 – 15:00</li>
+        <li>Хімія: Середа 10:00 – 12:00</li>
+    </ul>
+
+    <h2>Екзотичні танці</h2>
+    <ol>
+        <li>Сальса</li>
+        <li>Румба</li>
+        <li>Самба</li>
+    </ol>
+
+    <p>Якщо у вас виникли питання, звертайтесь до <abbr title="Студентська Рада">СР</abbr>. Для реєстрації скористайтеся <a href="http://example.com" title="Офіційний сайт">офіційним сайтом</a> університету або відвідайте <a href="http://example.com" title="Сторінка з реєстрацією">сторінку з реєстрацією</a>.</p>
+
+    <p>До речі, не забудьте про наш девіз: <q>Навчайся сьогодні — керуй завтра.</q></p>
+
+    <footer>
+        <p><strong>Девіз:</strong> <cite>Scientia Potentia Est</cite> — Знання — це сила.</p>
+    </footer>
+</body>
+</html>

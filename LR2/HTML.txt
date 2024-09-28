@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спостереження за птахами</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Заголовок з логотипом і навігацією -->
+    <header>
+        <div class="header-wrapper">
+            <h1>Спостереження за птахами</h1>
+            <img src="logo.png" alt="Логотип сайту">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Проекти</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+            <!-- Форма пошуку -->
+            <form>
+                <input type="search" name="query" placeholder="Пошуковий запит">
+                <input type="submit" value="Пошук">
+            </form>
+        </nav>
+    </header>
+
+    <!-- Основний контент -->
+    <main>
+        <!-- Стаття -->
+        <article>
+            <h2>Вітаємо на сторінці спостереження за птахами!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Vivamus fermentum semper porta.</p>
+            <img src="bird.jpg" alt="Зображення птахів">
+        </article>
+
+        <!-- Бічна панель для мініатюр -->
+        <aside>
+            <h2>Пов’язане</h2>
+            <ul>
+                <li><a href="#">Птахи на півночі</a></li>
+                <li><a href="#">Види птахів України</a></li>
+                <li><a href="#">Захист навколишнього середовища</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Нижній колонтитул -->
+    <footer>
+        <p>&copy; 2050 Спостереження за птахами. Всі права захищені.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.sender-column {
+    text-align: right;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.5;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
