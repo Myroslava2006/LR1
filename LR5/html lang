@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>NASA Splash Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <style>
+      
+
+      html {
+        font-family: 'Open Sans', sans-serif;
+        background: url(pattern.png);
+      }
+
+      body {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+      }
+
+      /* Header styling */
+
+      header {
+        height: 150px;
+      }
+
+      header img {
+        width: 100px;
+        position: absolute;
+        right: 32.5px;
+        top: 32.5px;
+      }
+
+      h1 {
+        font-size: 50px;
+        line-height: 140px;
+        margin: 0 0 0 32.5px;
+      }
+
+      /* main section and video styling */
+
+      main {
+        background: #ccc;
+      }
+
+      article {
+        padding: 20px;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      p {
+        line-height: 2;
+      }
+
+      iframe {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 100%;
+      }
+
+      /* further info links */
+
+      .further-info {
+        clear: left;
+        padding: 40px 0;
+        background: #01031C;
+        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+                    inset 0 -3px 2px rgba(0,0,0,0.5);
+      }
+
+      .further-info a {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+
+      .further-info img {
+        max-width: 100%;
+      }
+
+      .clearfix {
+        clear: both;
+      }
+
+      /* Space image */
+
+      .space-image img {
+        display: block;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>NASA</h1>
+      <!-- insert <img> element, link to the small version of the NASA logo -->
+      <img src="nasa-logo-small.png">
+    </header>
+    <main>
+      <article>
+        
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/4czjS9h4Fpg?si=v9lXwWyOapm2Lsr-" 
+        title="YouTube video player" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; 
+         picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Exploring the Cosmos</h2>
+        <p>NASA is a global community engineers, and explorers, working together to push the boundaries of space 
+          exploration and scientific discovery. We believe that expanding our understanding of the universe is essential to the 
+          advancement of humanity and our collective future.</p>
+        <p>Click on the images below to find more information about the fascinating missions NASA undertakes. Visit 
+          the <a href="https://www.nasa.gov/">NASA Official Website</a> for more details.</p>
+      </article>
+      <div class="further-info">
+        <!-- insert images with srcsets and sizes -->
+        <a href="https://www.nasa.gov/">
+          <img src="nasa-logo.svg", alt="nasa logo">
+        </a>
+        <a href="https://mars.nasa.gov/mars2020/">
+          <img src="mars-rover-120.png"
+               srcset="mars-rover-120.png 120w, mars-rover-400.png 400w"
+               sizes="(max-width: 500px) 120px, 400px">
+        </a>
+        <a href="https://www.nasa.gov/mission_pages/hubble/main/index.html">
+          <img src="hubble-telescope-120.png"
+               srcset="hubble-telescope-120.png 120w, hubble-telescope-400.png 400w"
+               sizes="(max-width: 500px) 120px, 400px">
+        </a>
+        <a href="https://earthobservatory.nasa.gov/">
+          <img src="earth-from-space-120.png"
+               srcset="earth-from-space-120.png 120w, earth-from-space-400.png 400w"
+               sizes="(max-width: 500px) 120px, 400px">
+        </a>
+        <div class="clearfix"></div>
+      </div>
+      <div class="space-image">
+        <picture>
+          <source media="(max-width: 600px)" srcset="milky-way-portrait.jpeg">
+          <img src="milky-way-landscape.jpeg">
+        </picture>
+      </div>
+    </main>
+  </body>
+</html>
+
