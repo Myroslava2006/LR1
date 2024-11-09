@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #ccc;
+}
+
+article {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    position: relative;
+    background: 
+      url('top-image.png') top center no-repeat,    /* Верхнє зображення */
+      url('bottom-image.png') bottom center no-repeat; /* Нижнє зображення */
+    background-size: contain; /* Використовуємо contain для правильного масштабу зображень */
+    background-color: white; /* Білий фон */
+    padding-top: 30mm; /* Відступ для верхнього зображення */
+    padding-bottom: 30mm; /* Відступ для нижнього зображення */
+}
+
+h1 {
+    position: absolute;
+    top: 20mm;
+    left: 20mm;
+    width: 128px;
+    height: 128px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background: url('logo.png') no-repeat center center;
+    background-size: cover;
+}
+
+address {
+    position: absolute;
+    bottom: 8mm;
+    right: 20mm;
+}
+
+/* Semi-transparent gradient overlay */
+article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent, transparent, rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+}
