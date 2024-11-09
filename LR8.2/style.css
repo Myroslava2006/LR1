@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header,
+  section,
+  aside,
+  nav,
+  footer {
+    padding: 20px;
+  }
+  header,
+  footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  @font-face {
+    font-family: 'sans-serif';
+    src: url('font/Roboto-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'serif123';
+    src: url('font/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  html {
+    font-family: serif123;
+    font-size: 10px;
+  }
+  
+  h1,
+  h2 {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 3.7em;
+  }
+  
+  section h2+p {
+    text-indent: 20px;
+  }
+  
+  p,
+  li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    word-spacing: 3px;
+    margin: 15px;
+  }
+  
+  
+  a {
+    outline: none;
+  }
+  
+  a[href*="http"] {
+    padding-right: 19px;
+    background: url(external-link-52.png) no-repeat 100% 0;
+    background-size: 16px 16px;
+  }
+  
+  a:link,
+  a:visited {
+    color: #a66;
+  }
+  
+  a:focus,
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: rgb(23, 7, 84);
+  
+  }
+  
+  ul,
+  ol {
+    margin: 15px;
+    line-height: 1.5px;
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  ul,
+  ol,
+  li {
+    line-height: 1.5;
+  }
+  
+  ol {
+    list-style-type: lower-latin;
+  }
+  
+  nav ul {
+    padding-left: 0;
+    margin-top: 0.8rem;
+  }
+  
+  nav li {
+    list-style-type: none;
+    margin-bottom: 2rem;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    font-size: 2.5rem;
+    border: 1px solid #a66;
+  }
+  
+  nav li a:focus,
+  nav li a:hover {
+    color: white;
+    background: #a66;
+  }
+  
+  nav li a:active {
+    color: white;
+    background: black;
+  }
